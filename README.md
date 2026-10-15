@@ -1,5 +1,8 @@
 # Space Launch & Starlink Tracker (MCP server)
 
+**Live MCP URL (Streamable HTTP, no auth):** `https://space-launch-tracker-mcp.vercel.app/mcp`  
+Health check: `https://space-launch-tracker-mcp.vercel.app/health`
+
 An MCP server that gives Grok Bot (or any MCP client) live space data:
 
 - **Upcoming launches worldwide** with live countdowns, from The Space Devs Launch Library 2
