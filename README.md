@@ -12,6 +12,24 @@ An MCP server that gives Grok Bot (or any MCP client) live space data:
 
 It uses CelesTrak TLEs and SGP4 via [satellite.js](https://github.com/shashwatak/satellite-js). All data is public and needs no API keys. Every output cites its source URL and fetch timestamp.
 
+## Use in Cursor
+
+**From the Cursor Marketplace:** once listed, install it from https://cursor.com/marketplace (publisher MAASAI Labs). The plugin manifest lives in https://github.com/MAASAI-Labs/cursor-plugins.
+
+1. Search the Marketplace for this plugin and click **Install**.
+2. Check the server is enabled under Cursor Settings, then MCP. Plugin servers show with a `plugin-` prefix.
+
+**Manually:** add the hosted server to `~/.cursor/mcp.json` (or `.cursor/mcp.json` in a project):
+
+```json
+{
+  "mcpServers": {
+    "space-launch-tracker": { "url": "https://space-launch-tracker-mcp.vercel.app/mcp" }
+  }
+}
+```
+
+
 ## Tools
 
 | Tool | Purpose | Key inputs |
@@ -86,6 +104,12 @@ No credentials needed.
 - [CelesTrak](https://celestrak.org) (Dr. T.S. Kelso)
 
 Predictions are for information only.
+
+## Privacy and terms
+
+- Privacy policy: https://maasai.tech/privacy
+- Terms of use: https://maasai.tech/terms
+- Support and data requests: colepresley000@gmail.com
 
 ## License
 
